@@ -1,8 +1,8 @@
 package main
 
 import (
-    "Tree"
-    "fmt"
+	"golang.org/x/tour/tree"
+	"fmt"
 )
 
 // Walk walks the tree t sending all values
@@ -35,4 +35,8 @@ func Same(t1, t2 *tree.Tree) bool {
 }
 
 func main() {
-	t1 := tree.New(1)
+	t1 := tree.New(16)
+	t2 := tree.New(12)
+	fmt.Println(Same(t1, t2))
+}
+
